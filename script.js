@@ -16,9 +16,14 @@ const hoteis = [
       const card = document.createElement("div");
       card.classList.add("card");
       card.innerHTML = `
-        <h3>${hotel.nome}</h3>
-        <img src="https://via.placeholder.com/200x120" alt="${hotel.nome}">
+      <div class="container-dados"> 
+        <div class="container-titulo"> 
+          <h3>${hotel.nome}</h3>
+        </div>  
+        <img src="./images/hotel-exp1" alt="${hotel.nome}">
         <p>${hotel.preco}</p>
+      </div>
+      
         <div class="rating-container">
           <p class="rating">${hotel.rating} ★</p>
           <p>${hotel.avaliacoes} Avaliações</p>
@@ -35,9 +40,13 @@ const hoteis = [
       const card = document.createElement("div");
       card.classList.add("card");
       card.innerHTML = `
-        <h3>${hotel.nome}</h3>
-        <img src="https://via.placeholder.com/200x120" alt="${hotel.nome}">
-        <p>${hotel.preco}</p>
+      <div class="container-dados"> 
+        <div class="container-titulo">
+          <h3>${hotel.nome}</h3>
+        </div>
+          <img src="./images/hotel-exp1" alt="${hotel.nome}">
+          <p>${hotel.preco}</p>
+      </div>
         <div class="rating-container">
           <p class="rating">${hotel.rating} ★</p>
           <p>${hotel.avaliacoes} Avaliações</p>
@@ -45,4 +54,3 @@ const hoteis = [
       `;
       carousel_antigas.appendChild(card);
     });
-
