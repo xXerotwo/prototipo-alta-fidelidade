@@ -24,8 +24,9 @@ header{
 .barra-pesquisa-e-titulo{
     display:flex;
     justify-content: space-between;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 1rem;
+    margin-right: 10rem;
+    margin-top: 20px;
 }
 
 .carousel-container{
@@ -41,4 +42,53 @@ header{
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-left: 20px;
+}
+
+input[type="text"]{
+    
+    width: 30%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.carousel-container{
+    margin-left: 50px;
+}
+
+.card{
+    flex: 0 0 auto;
+    width: 200px;
+    scroll-snap-align: start;
+    
+    border-radius: 10px;
+    padding: 10px;
+    
+    text-align: center;
+}
+
+.container-titulo{
+    
+    height: 12%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f0a202;
+}
+
+.container-dados{
+    background-color: #9b644d;
+    border-radius: 18px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 90%;
 }
