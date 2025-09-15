@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaju</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #deb887;
+    }
+
+    /* Cabeçalho */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d87b00;
+      padding: 10px 20px;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+    .login {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Pesquisa */
+    .search-bar {
+      margin: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .search-bar input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    /* Cards */
+    .cards {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px 20px;
+    }
+    .card {
+      min-width: 200px;
+      background-color: #a0522d;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      flex-shrink: 0;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .tag {
+      background-color: orange;
+      padding: 5px;
+      border-radius: 8px;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    /* Seção */
+    h2 {
+      margin-left: 20px;
+    }
+
+    /* Rodapé */
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px;
+    }
+    footer button {
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer button:hover {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Viaju</h1>
+    <div class="login">Login <span>👤</span></div>
+  </header>
+
+  <h2>Opções de pontos turísticos</h2>
+
+  <div class="search-bar">
+    <input type="text" placeholder="🔍 Pesquisar">
+  </div>
+
+  <!-- Novos pontos turísticos -->
+  <div class="cards">
+    <div class="card">
+      <div class="tag">Estátuas</div>
+      <img src="estatuas.jpg" alt="Estátua">
+      <p>Localidade: Rua da Frente<br>Urbano</p>
+    </div>
+    <div class="card">
+      <div class="tag">Estátuas</div>
+      <img src="estatuas.jpg" alt="Estátua">
+      <p>Localidade: Rua da Frente<br>Urbano</p>
+    </div>
+    <div class="card">
+      <div class="tag">Estátuas</div>
+      <img src="estatuas.jpg" alt="Estátua">
+      <p>Localidade: Rua da Frente<br>Urbano</p>
+    </div>
+  </div>
+
+  <!-- Visitas antigas -->
+  <h2>Visitas Antigas</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="tag">Estátuas</div>
+      <img src="estatuas.jpg" alt="Estátua">
+      <p>Localidade: Rua da Frente<br>Urbano</p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <button>Restaurante</button>
+    <button>Hotéis</button>
+    <button>Pontos turísticos</button>
+  </footer>
+</body>
+</html>

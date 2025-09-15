@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4e1c2;
+}
+
+header{
+    margin: 0px;
+    display: flex;
+    background-color:#9b644d ;
+    
+}
+
+.nome-site-e-login{
+    background-color: #f0a202;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50%;
+}
+
+.quartos {
+  width: 70%;
+  float: left;
+  padding: 20px;
+}
+
+.mapa {
+  width: 30%;
+  float: right;
+}
+
+.quarto-card {
+  display: flex;
+  background: #8c5a3d;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  color: white;
+}
+
+.quarto-card img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.info {
+  padding: 15px;
+  flex: 1;
+}
+
+.tag {
+  background: #f4a300;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+}
+
+.preco {
+  margin: 10px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #f1e1c9;
+  margin-top: 15px;
+}
+
+.icone {
+  width: 18px;
+}
+
+.estrela {
+  margin-left: auto;
+  color: gold;
+  font-weight: bold;
+}
+
