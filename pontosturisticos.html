@@ -8,7 +8,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #deb887;
+      background-color: #f4e1c2;
     }
 
     /* Cabeçalho */
@@ -16,7 +16,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #d87b00;
+      background-color: #EC9C28;
       padding: 10px 20px;
     }
     header h1 {
@@ -29,6 +29,27 @@
       display: flex;
       align-items: center;
       gap: 8px;
+    }
+
+    /* Botões de navegação */
+    .nav-buttons {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      margin: 15px 20px;
+    }
+    .nav-buttons a {
+      text-decoration: none;
+    }
+    .nav-buttons button {
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .nav-buttons button:hover {
+      background-color: #ffcc00;
     }
 
     /* Pesquisa */
@@ -45,61 +66,56 @@
 
     /* Cards */
     .cards {
-      display: flex;
-      overflow-x: auto;
-      gap: 10px;
-      padding: 10px 20px;
+      display: grid; /* agora em grade */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsivo */
+      gap: 20px;
+      padding: 20px;
     }
     .card {
-      min-width: 200px;
       background-color: #a0522d;
       border-radius: 10px;
       color: white;
       text-align: center;
-      padding: 10px;
-      flex-shrink: 0;
+      padding: 15px;
     }
     .card img {
-      width: 100%;
-      border-radius: 10px;
+  width: 100%;       /* */
+  height: auto;      /*  */
+  max-height: 300px; /*  */
+  object-fit: cover; /*  */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
     }
     .tag {
       background-color: orange;
       padding: 5px;
       border-radius: 8px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       display: inline-block;
+      font-weight: bold;
     }
 
     /* Seção */
     h2 {
       margin-left: 20px;
     }
-
-    /* Rodapé */
-    footer {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin: 20px;
-    }
-    footer button {
-      padding: 10px 15px;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    footer button:hover {
-      background-color: #ffcc00;
-    }
   </style>
 </head>
 <body>
-  <header>
+  <header> 
     <h1>Viaju</h1>
-    <div class="login">Login <span>👤</span></div>
-  </header>
+     <div> Login <span>👤</span></div> 
+    </header>
+
+
+  <!-- Botões de navegação -->
+  <div class="nav-buttons">
+    <a href="lanchonetes.html"><button>Lanchonetes</button></a>
+    <a href="hoteis.html"><button>Hotéis</button></a>
+    <a href="pontos.html"><button>Pontos turísticos</button></a>
+  </div>
 
   <h2>Opções de pontos turísticos</h2>
 
@@ -111,17 +127,17 @@
   <div class="cards">
     <div class="card">
       <div class="tag">Estátuas</div>
-      <img src="estatuas.jpg" alt="Estátua">
+      <img src="https://imgmd.net/images/v1/guia/1703192/largo-da-gente-sergipana.jpg" alt="Estátua">
       <p>Localidade: Rua da Frente<br>Urbano</p>
     </div>
     <div class="card">
       <div class="tag">Estátuas</div>
-      <img src="estatuas.jpg" alt="Estátua">
+      <img src="https://imgmd.net/images/v1/guia/1703192/largo-da-gente-sergipana.jpg" alt="Estátua">
       <p>Localidade: Rua da Frente<br>Urbano</p>
     </div>
     <div class="card">
       <div class="tag">Estátuas</div>
-      <img src="estatuas.jpg" alt="Estátua">
+      <img src="https://imgmd.net/images/v1/guia/1703192/largo-da-gente-sergipana.jpg" alt="Estátua">
       <p>Localidade: Rua da Frente<br>Urbano</p>
     </div>
   </div>
@@ -131,16 +147,9 @@
   <div class="cards">
     <div class="card">
       <div class="tag">Estátuas</div>
-      <img src="estatuas.jpg" alt="Estátua">
+      <img src="https://imgmd.net/images/v1/guia/1703192/largo-da-gente-sergipana.jpg" alt="Estátua">
       <p>Localidade: Rua da Frente<br>Urbano</p>
     </div>
   </div>
-
-  <!-- Rodapé -->
-  <footer>
-    <button>Restaurante</button>
-    <button>Hotéis</button>
-    <button>Pontos turísticos</button>
-  </footer>
 </body>
 </html>
