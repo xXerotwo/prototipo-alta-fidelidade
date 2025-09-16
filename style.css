@@ -141,5 +141,17 @@ img{
 }
 
 #opc_pontos{
-    width:120px;
+    width:150px;
+}
+
+
+#lanchonete_selecionado{
+    width: 100px;
+}
+
+#hotel_opc{
+    width: 70px;
+    align-items: center;
+    display: flex;
+    align-items: center;
 }
