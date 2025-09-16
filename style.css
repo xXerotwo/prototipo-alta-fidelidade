@@ -92,3 +92,66 @@ img{
     margin-top: 10px;
     width: 90%;
 }
+
+.opcoes{
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+    border-radius:10px ;
+}
+
+
+.selecionado{
+    
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+       
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+   text-align: center;
+    height: 30px;
+    align-items: center;
+    border-radius:10px 5px;
+}
+
+.nao_selecionado{
+      background-color: white;
+    color: black;
+    
+    text-align: center;
+       
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+
+    
+    height: 30px;
+    align-items: center;
+    border-radius:10px 5px;
+}
+
+#opc_pontos{
+    width:150px;
+}
+
+
+#lanchonete_selecionado{
+    width: 100px;
+}
+
+#hotel_opc{
+    width: 70px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
